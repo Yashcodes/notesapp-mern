@@ -9,5 +9,11 @@
       "src": "./frontend/build",
       "use": "@vercel/static"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "./backend/index.js"
+    }
   ]
 }
